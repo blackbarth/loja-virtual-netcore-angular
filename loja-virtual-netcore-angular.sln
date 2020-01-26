@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-QuickBuy.UI", "0-QuickBuy.UI", "{194948BB-78A8-43D7-89D3-18D9D70127F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-QuickBuy.Application", "1-QuickBuy.Application", "{9AD8A2B7-D20A-44E0-98F1-718D9E32AB18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-QuickBuy.Domain", "2-QuickBuy.Domain", "{38008A0A-9E38-4C5F-A697-E418EC8526A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-QuickBuy.Infrastructure", "4-QuickBuy.Infrastructure", "{1BB8B6C6-F63A-4F8B-9CE5-A9569E9054CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBuy.Domain", "QuickBuy.Domain\QuickBuy.Domain.csproj", "{892D7BCB-DE4A-41C7-AD71-A2A5B7423CDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-QuickBuy.Repository", "3-QuickBuy.Repository", "{F63EEFE2-049B-4B5B-A587-1164DB3C4B08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBuy.Repository", "QuickBuy.Repository\QuickBuy.Repository.csproj", "{63286BD1-283A-49F0-9BB6-3565ACDB9FF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuy.Web", "QuickBuy.Web\QuickBuy.Web.csproj", "{70D9ADCC-2F30-48E3-9A01-BA9233E56D95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{892D7BCB-DE4A-41C7-AD71-A2A5B7423CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{892D7BCB-DE4A-41C7-AD71-A2A5B7423CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{892D7BCB-DE4A-41C7-AD71-A2A5B7423CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{892D7BCB-DE4A-41C7-AD71-A2A5B7423CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63286BD1-283A-49F0-9BB6-3565ACDB9FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63286BD1-283A-49F0-9BB6-3565ACDB9FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63286BD1-283A-49F0-9BB6-3565ACDB9FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63286BD1-283A-49F0-9BB6-3565ACDB9FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70D9ADCC-2F30-48E3-9A01-BA9233E56D95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D9ADCC-2F30-48E3-9A01-BA9233E56D95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D9ADCC-2F30-48E3-9A01-BA9233E56D95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D9ADCC-2F30-48E3-9A01-BA9233E56D95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{892D7BCB-DE4A-41C7-AD71-A2A5B7423CDA} = {38008A0A-9E38-4C5F-A697-E418EC8526A0}
+		{63286BD1-283A-49F0-9BB6-3565ACDB9FF7} = {F63EEFE2-049B-4B5B-A587-1164DB3C4B08}
+		{70D9ADCC-2F30-48E3-9A01-BA9233E56D95} = {194948BB-78A8-43D7-89D3-18D9D70127F6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF933FD4-94FD-44C2-8E47-1E2B8D4B7198}
+	EndGlobalSection
+EndGlobal
