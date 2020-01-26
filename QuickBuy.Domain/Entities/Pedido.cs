@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using QuickBuy.Domain.ObjetoDeValor;
 
 namespace QuickBuy.Domain.Entities
 {
-    public class Pedido
+    public class Pedido : Entidade
     {
         public int IdPedido { get; set; }
         public DateTime DataPedido { get; set; }
@@ -19,5 +20,14 @@ namespace QuickBuy.Domain.Entities
 
         public int IdFormaPagamento { get; set; }
         public FormaPagamento FormaPagamento { get; set; }
+
+        public override void Validate()
+        {
+            LimparMensagensValidacao();
+            if (!ItensPedido.Any())
+                AdicionarCritica("Pedido tem que ter no minimo 1 item");
+            if(string.IsNullOrEmpty(CEP))
+                AdicionarCritica("CEP é obrigatorio");
+        }
     }
 }

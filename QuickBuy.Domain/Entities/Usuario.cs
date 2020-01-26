@@ -2,7 +2,7 @@
 
 namespace QuickBuy.Domain.Entities
 {
-    public class Usuario
+    public class Usuario : Entidade
     {
         public int IdUsuario { get; set; }
         public string Email { get; set; }
@@ -12,5 +12,9 @@ namespace QuickBuy.Domain.Entities
 
         public ICollection<Pedido> Pedidos { get; set; }
 
+        public override void Validate()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
